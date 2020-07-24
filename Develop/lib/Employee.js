@@ -1,13 +1,12 @@
 // TODO: Write code to define and export the Employee class
  class Employee {
 
-    constructor (employeeId, firstName, lastName, title, email, officeNumber) {
-        this.employeeId = id;
-		this.firstName = fName;
-		this.lastName = lName;
-		this.title = title;
+    constructor (name, employeeId, email, role) {
+        this.id = employeeId;
+		this.name = name;
+		this.role = role;
 		this.email = email;
-		this.officeNumber = officeNum;
+		
     }
 
     getOffice() {
@@ -22,8 +21,12 @@
         return this.email;
     }
 
-    getTitle() {
-        return this.title;
+    getRole() {
+        return this.role;
+    }
+
+    getName() {
+        return this.name;
     }
 
  }
